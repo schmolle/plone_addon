@@ -6,3 +6,4 @@ from plone.supermodel import model
 class IPressemeldungII(model.Schema):
     """ Marker interface for PressemeldungII
     """
+    model.load('pressemeldung_i_i.xml')
