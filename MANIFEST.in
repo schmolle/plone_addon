@@ -1,0 +1,4 @@
+graft src/grp3
+graft docs
+include *.rst
+global-exclude *.pyc

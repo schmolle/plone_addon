@@ -1,0 +1,6 @@
+[report]
+include =
+    src/grp3/*
+omit =
+    */test*
+    */upgrades/*
