@@ -5,5 +5,47 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n:domain="grp3.types">
   <schema>
+   <field name="lesedauer" type="zope.schema.Int">
+      <description>Dauer in Minuten</description>
+      <required>False</required>
+      <title>Lesedauer</title>
+    </field>
+    <field name="veroffentlicht" type="zope.schema.Datetime">
+      <description/>
+      <required>False</required>
+      <title>Ver&#246;ffentlicht</title>
+    </field>
+    <field name="autor" type="zope.schema.TextLine">
+      <default>testautor</default>
+      <description/>
+      <title>Autor</title>
+    </field>
+    <field name="pressemitteilung" type="plone.app.textfield.RichText">
+      <default>&lt;p&gt;testtext&lt;/p&gt;</default>
+      <description/>
+      <title>Pressemitteilung</title>
+    </field>
+    <field name="quelle" type="zope.schema.URI">
+      <default>https://www.berlin.de/sen/ias/presse/pressemitteilungen/2018/pressemitteilung.718423.php</default>
+      <description/>
+      <title>Quelle</title>
+    </field>
+    <fieldset name="pressebild" label="Pressebild">
+      <field name="pressebild" type="plone.namedfile.field.NamedBlobImage">
+        <description/>
+        <required>False</required>
+        <title>Pressebild</title>
+      </field>
+      <field name="beschreibung_bild" type="zope.schema.TextLine">
+        <description/>
+        <required>False</required>
+        <title>Beschreibung Bild</title>
+      </field>
+      <field name="autor_bild" type="zope.schema.TextLine">
+        <description/>
+        <required>False</required>
+        <title>Autor Bild</title>
+      </field>
+    </fieldset>
   </schema>
 </model>
